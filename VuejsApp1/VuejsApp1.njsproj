@@ -1,0 +1,273 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>VuejsApp1</Name>
+    <RootNamespace>VuejsApp1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>77649a07-b1f3-4b12-9c12-7cf9207e1eda</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>node_modules\@vue\cli-service\bin\vue-cli-service.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+    <ScriptArguments>serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="db\addCartQuantity.sql" />
+    <Content Include="db\addToCart.sql" />
+    <Content Include="db\addToFavorites.sql" />
+    <Content Include="db\backup\backup.sql" />
+    <Content Include="db\createUser.sql" />
+    <Content Include="db\findUser.sql" />
+    <Content Include="db\getAllItems.sql" />
+    <Content Include="db\getFavorites.sql" />
+    <Content Include="db\getItem.sql" />
+    <Content Include="db\getReviews.sql" />
+    <Content Include="db\getUserCart.sql" />
+    <Content Include="db\getUserInfo.sql" />
+    <Content Include="db\remAllFromUserCart.sql" />
+    <Content Include="db\remCartQuantity.sql" />
+    <Content Include="db\remFromCart.sql" />
+    <Content Include="db\remFromFavorites.sql" />
+    <Content Include="db\submitReview.sql" />
+    <Content Include="db\table_seed_files.sql" />
+    <Content Include="db\updateAccount.sql" />
+    <Content Include="public\delete.png" />
+    <Content Include="public\facebook.png" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\google-plus.png" />
+    <Content Include="public\index.html" />
+    <Content Include="public\instagram.png" />
+    <Content Include="public\manifest.json" />
+    <Content Include="public\minus.png" />
+    <Content Include="public\plus.png" />
+    <Content Include="public\twitter.png" />
+    <Content Include="src\App.vue" />
+    <Content Include="src\components\account\account.js" />
+    <Content Include="src\components\account\account.test.js" />
+    <Content Include="src\components\account\cypress.json" />
+    <Content Include="src\components\account\favItem.js" />
+    <Content Include="src\components\account\favorites.js" />
+    <Content Include="src\components\auth\Failure.js" />
+    <Content Include="src\components\auth\Login.js" />
+    <Content Include="src\components\bot\analytics.js" />
+    <Content Include="src\components\bot\api.js" />
+    <Content Include="src\components\bot\Chat.js" />
+    <Content Include="src\components\bot\ChatTest.js" />
+    <Content Include="src\components\bot\common.js" />
+    <Content Include="src\components\bot\conversation.js" />
+    <Content Include="src\components\bot\global.js" />
+    <Content Include="src\components\bot\payload.js" />
+    <Content Include="src\components\details\mainContainer\filter\DropDownFilter.js" />
+    <Content Include="src\components\details\mainContainer\filter\Filter.js" />
+    <Content Include="src\components\details\mainContainer\filter\SelectColor.js" />
+    <Content Include="src\components\details\mainContainer\filter\SelectSize.js" />
+    <Content Include="src\components\details\mainContainer\filter\Square.js" />
+    <Content Include="src\components\details\mainContainer\icon\arrowDown.svg" />
+    <Content Include="src\components\details\mainContainer\icon\arrowUp.svg" />
+    <Content Include="src\components\details\mainContainer\icon\blackHeart.svg" />
+    <Content Include="src\components\details\mainContainer\icon\kidsBanner.gif" />
+    <Content Include="src\components\details\mainContainer\icon\newArrivals.gif" />
+    <Content Include="src\components\details\mainContainer\icon\sale.gif" />
+    <Content Include="src\components\details\mainContainer\Image.js" />
+    <Content Include="src\components\details\mainContainer\ImgContainer.js" />
+    <Content Include="src\components\details\mainContainer\MainContainer.js" />
+    <Content Include="src\components\details\mainContainer\TopBanner.js" />
+    <Content Include="src\components\details\sideMenu\Item.js" />
+    <Content Include="src\components\details\sideMenu\MenuList.js" />
+    <Content Include="src\components\details\Title.js" />
+    <Content Include="src\components\ducks\reducer.js" />
+    <Content Include="src\components\ducks\store.js" />
+    <Content Include="src\components\Home.vue" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="db\" />
+    <Folder Include="db\backup\" />
+    <Folder Include="dist\" />
+    <Folder Include="public\" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\account\" />
+    <Folder Include="src\components\auth\" />
+    <Folder Include="src\components\bot\" />
+    <Folder Include="src\components\details\" />
+    <Folder Include="src\components\details\mainContainer\" />
+    <Folder Include="src\components\details\mainContainer\filter\" />
+    <Folder Include="src\components\details\mainContainer\icon\" />
+    <Folder Include="src\components\details\sideMenu\" />
+    <Folder Include="src\components\ducks\" />
+    <Folder Include="src\components\Home\" />
+    <Folder Include="src\components\Home\itemImages\" />
+    <Folder Include="src\components\Home\testCarouselImages\" />
+    <Folder Include="src\components\itemView\" />
+    <Folder Include="src\components\itemView\media\" />
+    <Folder Include="src\components\media\" />
+    <Folder Include="src\components\stripe\" />
+    <Folder Include="src\components\utils\" />
+    <Folder Include="src\components\utils\details\" />
+    <Folder Include="src\components\utils\details\mainContainer\" />
+    <Folder Include="src\components\utils\details\mainContainer\filter\" />
+    <Folder Include="src\components\vr\" />
+    <Folder Include="src\components\vr\icon\" />
+    <Folder Include="src\components\vr\icon\computerModel\" />
+    <Folder Include="src\components\vr\icon\deskObj\" />
+    <Folder Include="src\components\vr\icon\model\" />
+    <Folder Include="src\components\vr\icon\objModel\" />
+    <Folder Include="src\components\vr\icon\person\" />
+    <Folder Include="src\components\vr\icon\tvStand\" />
+    <Folder Include="src\components\vr\icon\TV\" />
+    <Folder Include="src\components\vr\sound\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="babel.config.js" />
+    <Content Include="src\components\Home\Home.css" />
+    <Content Include="src\components\Home\Home.js" />
+    <Content Include="src\components\Home\itemImages\homeMen.jpg" />
+    <Content Include="src\components\Home\itemImages\homeWomen.jpg" />
+    <Content Include="src\components\Home\itemImages\kids.jpg" />
+    <Content Include="src\components\Home\itemImages\kids2.jpeg" />
+    <Content Include="src\components\Home\itemImages\kids3.jpg" />
+    <Content Include="src\components\Home\itemImages\kidsHome.jpg" />
+    <Content Include="src\components\Home\itemImages\menHome.jpg" />
+    <Content Include="src\components\Home\itemImages\mens.jpg" />
+    <Content Include="src\components\Home\itemImages\mens2.jpg" />
+    <Content Include="src\components\Home\itemImages\mens3.jpg" />
+    <Content Include="src\components\Home\itemImages\womens.jpg" />
+    <Content Include="src\components\Home\itemImages\womens2.jpg" />
+    <Content Include="src\components\Home\itemImages\womens3.jpg" />
+    <Content Include="src\components\Home\testCarouselImages\image1.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\image2.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\image3.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\image4.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\image5.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\image6.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\manWoman.jpg" />
+    <Content Include="src\components\Home\testCarouselImages\people2.png" />
+    <Content Include="src\components\Home\testCarouselImages\rack.png" />
+    <Content Include="src\components\Home\testCarouselImages\rack2.jpg" />
+    <Content Include="src\components\Home\testCarouselImages\store.jpg" />
+    <Content Include="src\components\Home\testCarouselImages\store2.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\store3.jpg" />
+    <Content Include="src\components\Home\testCarouselImages\store4.jpeg" />
+    <Content Include="src\components\Home\testCarouselImages\videoblocks-children-mother-and-grandfather-are-walking-holding-hands-alpha-channel_rqri5g-bb_thumbnail-full15.png" />
+    <Content Include="src\components\Home\testCarouselImages\vrGuy.png" />
+    <Content Include="src\components\Home\testCarouselImages\vrGuy2.png" />
+    <Content Include="src\components\Home\testCarouselImages\vr_headset.png" />
+    <Content Include="src\components\itemView\img1.jpg" />
+    <Content Include="src\components\itemView\img2.jpg" />
+    <Content Include="src\components\itemView\img3.jpg" />
+    <Content Include="src\components\itemView\img4.jpg" />
+    <Content Include="src\components\itemView\item.js" />
+    <Content Include="src\components\itemView\media\goldStar.png" />
+    <Content Include="src\components\itemView\media\startEmpty.png" />
+    <Content Include="src\components\media\cart.svg" />
+    <Content Include="src\components\media\chat.svg" />
+    <Content Include="src\components\media\cubes.png" />
+    <Content Include="src\components\media\hamburgerIcon.png" />
+    <Content Include="src\components\media\mountain2.png" />
+    <Content Include="src\components\media\person.png" />
+    <Content Include="src\components\media\searchIcon.png" />
+    <Content Include="src\components\media\V.png" />
+    <Content Include="src\components\stripe\Checkout.js" />
+    <Content Include="src\components\utils\details\mainContainer\filter\Cart.test.js" />
+    <Content Include="src\components\utils\details\mainContainer\filter\Checkout.test.js" />
+    <Content Include="src\components\utils\details\mainContainer\filter\SelectColor.test.js" />
+    <Content Include="src\components\utils\details\mainContainer\filter\SelectSize..test.js" />
+    <Content Include="src\components\utils\functions.js" />
+    <Content Include="src\components\utils\Men.test.js" />
+    <Content Include="src\components\vr\CheckoutVR.js" />
+    <Content Include="src\components\vr\FittingRoom.js" />
+    <Content Include="src\components\vr\Hollywood.js" />
+    <Content Include="src\components\vr\icon\Avengerss.mp4" />
+    <Content Include="src\components\vr\icon\blackShoes.png" />
+    <Content Include="src\components\vr\icon\blackShoes2.png" />
+    <Content Include="src\components\vr\icon\brownShoes.png" />
+    <Content Include="src\components\vr\icon\computerModel\model.mtl" />
+    <Content Include="src\components\vr\icon\computerModel\model.obj" />
+    <Content Include="src\components\vr\icon\deskObj\materials.mtl" />
+    <Content Include="src\components\vr\icon\deskObj\model.obj" />
+    <Content Include="src\components\vr\icon\grayHoody.png" />
+    <Content Include="src\components\vr\icon\model\man-color.jpg" />
+    <Content Include="src\components\vr\icon\model\men.dae" />
+    <Content Include="src\components\vr\icon\model\modelWoman.dae" />
+    <Content Include="src\components\vr\icon\objModel\materials.mtl" />
+    <Content Include="src\components\vr\icon\objModel\model.obj" />
+    <Content Include="src\components\vr\icon\person\materials.mtl" />
+    <Content Include="src\components\vr\icon\person\model.obj" />
+    <Content Include="src\components\vr\icon\redHoody.png" />
+    <Content Include="src\components\vr\icon\Register.mtl" />
+    <Content Include="src\components\vr\icon\Register.obj" />
+    <Content Include="src\components\vr\icon\silverShoes.png" />
+    <Content Include="src\components\vr\icon\store.jpg" />
+    <Content Include="src\components\vr\icon\thoughtBubble.png" />
+    <Content Include="src\components\vr\icon\tvStand\materials.mtl" />
+    <Content Include="src\components\vr\icon\tvStand\model.obj" />
+    <Content Include="src\components\vr\icon\TV\TV_01.mtl" />
+    <Content Include="src\components\vr\icon\TV\TV_01.obj" />
+    <Content Include="src\components\vr\sound\Elevator-musics.mp3" />
+    <Content Include="src\main.js" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+      npm run build
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
